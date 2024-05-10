@@ -15,7 +15,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      {/* <Partner />
+      <Partner />
       <Favorite />
       <Benefit />
       <Location />
@@ -23,7 +23,7 @@ function App() {
       <Testimoni />
       <FAQ />
       <CTA />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
