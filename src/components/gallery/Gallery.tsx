@@ -18,7 +18,7 @@ export default function Gallery() {
           <h6 className="mb-5 font-bold tracking-wider text-primary">
             MENGENAL DESTINEZE
           </h6>
-          <h1 className="text-6xl font-bold">
+          <h1 className="text-3xl font-bold md:text-6xl">
             🖼• Galeri Pariwisata & Blog Travel
           </h1>
         </div>
@@ -27,8 +27,8 @@ export default function Gallery() {
           <FaLongArrowAltRight className="transition-all group-hover:translate-x-3 group-hover:scale-125" />
         </button>
       </div>
-      <div className="mb-10 grid grid-cols-12 gap-5">
-        <article className="col-span-3 h-max w-full max-w-72 overflow-hidden rounded-lg bg-white shadow-lg">
+      <div className="mb-10 grid grid-cols-1 gap-5 md:grid-cols-12">
+        <article className="h-max w-full overflow-hidden rounded-lg bg-white shadow-lg md:col-span-3 md:max-w-72">
           <img
             src={url.bromo}
             alt="bromo"
@@ -46,7 +46,7 @@ export default function Gallery() {
           </div>
         </article>
         <div
-          className="group col-span-9 grid cursor-pointer place-content-center overflow-hidden rounded-lg bg-cover bg-center"
+          className="group col-span-9 grid min-h-48 cursor-pointer place-content-center overflow-hidden rounded-lg bg-cover bg-center"
           style={{ backgroundImage: `url("${url.ocean}")` }}
         >
           <div className="aspect-square rounded-full bg-primary p-4 text-white transition-all group-hover:scale-150 group-active:scale-95">

@@ -8,10 +8,10 @@ export default function Favorite() {
     <section className="container py-16">
       <div className="mb-16 flex items-center justify-between">
         <div>
-          <h6 className="mb-2 text-sm font-semibold text-primary">
+          <h6 className="mb-2 text-sm font-bold text-primary">
             DESTINASI FAVORITE
           </h6>
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-3xl font-bold md:text-5xl">
             ✈ • Temukan Destinasi Favoritmu{" "}
           </h1>
         </div>
@@ -24,7 +24,7 @@ export default function Favorite() {
         {Array.from({ length: 4 }).map((_: unknown, index: number) => (
           <div
             key={index}
-            className="group relative aspect-[3/4] w-full cursor-pointer overflow-hidden rounded-lg shadow-2xl hover:outline hover:outline-slate-200"
+            className="group relative col-span-2 aspect-[3/4] w-full cursor-pointer overflow-hidden rounded-lg shadow-2xl hover:outline hover:outline-slate-200 lg:col-span-1"
           >
             <img
               src={url}

@@ -47,7 +47,7 @@ export default function Footer() {
     <>
       <footer className="container mb-10 py-5">
         <div className="mb-10 grid grid-cols-6 gap-5">
-          <div className="col-span-3 pe-32">
+          <div className="col-span-6 md:col-span-3 md:pe-32">
             <img src={logo} alt="logo" className="mb-2" />
             <h1 className="mb-2 text-2xl font-bold">Destinize</h1>
             <p className="text-sm text-slate-500">
@@ -60,7 +60,7 @@ export default function Footer() {
             </p>
           </div>
           {menus.map((value: FooterMenu, index: number) => (
-            <div key={index}>
+            <div key={index} className="col-span-2 md:col-span-1">
               <h1 className="mb-5 text-xl font-semibold">{value.head}</h1>
               <ul className="*:mb-3 *:text-sm *:text-slate-500">
                 {value.items.map((value: string, index: number) => (
@@ -73,8 +73,10 @@ export default function Footer() {
           ))}
         </div>
         <div className="grid grid-cols-6 gap-5 text-slate-500 *:text-sm">
-          <p className="col-span-3">© 2021-2022, All Rights Reserved</p>
-          <div className="col-span-3 flex justify-between ">
+          <p className="col-span-6 md:col-span-3">
+            © 2021-2022, All Rights Reserved
+          </p>
+          <div className="col-span-6 flex flex-wrap justify-between gap-5 md:col-span-3 ">
             <p>Tentang Kami</p>
             <p>Kontak</p>
             <p>Privasi & Policy</p>

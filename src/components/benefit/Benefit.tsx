@@ -24,10 +24,10 @@ export default function Benefit() {
   ];
 
   return (
-    <section className="container flex items-center justify-between gap-5 py-16">
+    <section className="container flex flex-col flex-wrap items-center justify-between gap-5 py-16 lg:flex-row">
       <div className="flex-1">
         <h6 className="mb-5 font-semibold text-primary">RESERVASI TEMPAT</h6>
-        <h1 className="mb-16 text-6xl font-bold">
+        <h1 className="mb-16 text-3xl font-bold md:text-5xl">
           Gak mau ngantri? reservasi aja! 🤙🏻
         </h1>
         <ul>

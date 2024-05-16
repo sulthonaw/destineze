@@ -96,11 +96,11 @@ export default function FAQ() {
           <h6 className="mb-4 font-bold tracking-wider text-primary">
             FREQUENTLY ASKED QUESTION
           </h6>
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-3xl font-bold md:text-5xl">
             🤔• Pertanyaan yang Sering Diajukan
           </h1>
         </div>
-        <button className="btn group flex items-center gap-5 text-lg text-primary">
+        <button className="btn group flex items-center gap-5 text-primary md:text-lg">
           <span className="group-hover:underline">Lihat Semua</span>
           <FaLongArrowAltRight className="transition-all group-hover:translate-x-3 group-hover:scale-125" />
         </button>

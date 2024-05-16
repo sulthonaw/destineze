@@ -29,7 +29,7 @@ export default function Location() {
       <h6 className="mb-5 text-center font-bold tracking-wider text-secondary">
         CARI TEMPAT WISATA
       </h6>
-      <h1 className="mb-7 text-center text-6xl font-bold">
+      <h1 className="mb-7 text-center text-3xl font-bold md:text-6xl">
         🗺 • Cari Tempat Wisata Didekatmu
       </h1>
       <p className="mx-auto mb-10 max-w-3xl text-center leading-7">
@@ -38,15 +38,15 @@ export default function Location() {
         gak kudet lagi 👍🏻
       </p>
       <img src={mapImage} alt="map" className="mb-16 w-full" />
-      <ul className="grid grid-cols-3 gap-10">
+      <ul className="grid grid-cols-2 gap-10 md:grid-cols-3">
         {benefits.map((value: Benefit, index: number) => (
           <li key={index} className="flex gap-4">
             <span className="block aspect-square h-max w-max rounded-full bg-slate-100 p-2">
               🔥
             </span>
             <div>
-              <h6 className="mb-2 text-lg font-bold">{value.title}</h6>
-              <p>{value.description}</p>
+              <h6 className="mb-2 font-bold md:text-lg">{value.title}</h6>
+              <p className="text-sm md:text-base">{value.description}</p>
             </div>
           </li>
         ))}
